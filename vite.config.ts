@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/zentry-brand-kit/",  // ← ESSA LINHA É OBRIGATÓRIA
+  base: "/",  // base path set for Vercel root deployment
   server: {
     host: "::",
     port: 8080,
