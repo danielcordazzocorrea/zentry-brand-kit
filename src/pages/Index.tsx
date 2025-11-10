@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Hero } from "@/components/Hero";
+import { Services } from "@/components/Services";
+import { About } from "@/components/About";
+import { CTA } from "@/components/CTA";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Floating Brand Guide button */}
+      <Link to="/brand-guide">
+        <Button 
+          className="fixed bottom-8 right-8 gap-2 shadow-elevated z-50"
+          size="lg"
+        >
+          <FileText className="w-4 h-4" />
+          Ver Brand Guide
+        </Button>
+      </Link>
+
+      <Hero />
+      <Services />
+      <About />
+      <CTA />
+      <Footer />
     </div>
   );
 };
