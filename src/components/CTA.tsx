@@ -22,9 +22,12 @@ export const CTA = () => {
               size="lg" 
               variant="secondary"
               className="gap-2 group shadow-elevated"
+              asChild
             >
-              Falar com especialista
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <a href="https://wa.me/5512997614335" target="_blank" rel="noopener noreferrer">
+                Falar com especialista
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
         </div>

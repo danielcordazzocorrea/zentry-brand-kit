@@ -30,9 +30,11 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" variant="hero" className="gap-2 group">
-            Começar agora
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <Button size="lg" variant="hero" className="gap-2 group" asChild>
+            <a href="https://wa.me/5512997614335" target="_blank" rel="noopener noreferrer">
+              Começar agora
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           <Button size="lg" variant="outline">
             Conhecer soluções
